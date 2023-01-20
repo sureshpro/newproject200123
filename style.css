@@ -1,47 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Userlock</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">   
-</head>
-<body>
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: blueviolet;
+    background-size: cover;
+}
+form{
+    width: 800px;
+    height: 550px;
+   
+}
+input[type=text]{
+    padding: 10px;
+    text-align: start;
+    height: 38px;
+    width: 55%;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    border:none;
+    border-radius: 10px 0 0 10px;
+    background:rgb(56, 55, 55);
+   
+    color: #e6ed0e ;
+    border: 1px solid #fff; 
 
-    <form>
-        <div>
-          <label>Search</label>  <label1>Status</label> <br>
-        <input class="txt_box" type="text" placeholder="Enter Email" name="search">
-        <button><i class="bi bi-search"></i></button> <br> <br> <br>
-        <table>
-            <tr>
-                <th>USERNAME</th>
-                <th>STATUS</th>
-                <th>DEVICE</th>
-            </tr>
-            <tr>
-               <td>Gokul</td>
-               <td>Available</td>
-               <td>Laptop</td>
-            </tr>
-            <tr>
-               <td>Mohan</td>
-               <td>Available</td>
-               <td>Computer</td>
-            </tr>
-            <tr>
-                <td>Saravanan</td>
-                <td>Offline</td>
-                <td>Laptop</td>
-             </tr>
-        </table>
+}
+button{
+    position: absolute;
+    float: right;
+    height: 60px;
+    width: 5%;
+    padding: 20px;
+    font-size: 20px;
+    outline: none;
+    border:none;
+    background:#1ba116;
+    border-radius: 0 10px 10px 0;
+    font-weight: bold;
+    color: #fff;
+    border: 1px solid #fff; 
+    padding: 15px;
 
-    </div>
-
-        
-    </form>
-    <script>alert("hi")</script>
-</body>
-</html>
+}
+label{
+    font-size: 40px;
+   
+   padding: 0%;
+}
+label1{
+    padding: 15px;
+    
+}
+table,tr,th,td{
+    font-size: 25px;
+    border:1px solid black;
+    text-align: center;
+    padding: 15px;
+    border-radius: 15px;
+}
+th{
+    font-size: 29px;
+    background-color: gray;
+}
+td{
+    background-color: white;
+}
